@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>{{ page.title || site.title }}</title>
+    {{ include('../site/site.css') }}
+  </head>
+  <body>
+    <nav class="links">
+      {{ site.pages.map((page) => {
+        return `<a class="page-link" href="${page.url}">${page.title}</a>`
+      }).join(' ') }}
+    </nav>
+    <div id="container">
+      {{ content }}
+    </div>
+  </body>
+</html>

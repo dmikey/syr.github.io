@@ -1,0 +1,26 @@
+{
+  "name": "syr.github.io",
+  "version": "0.0.0",
+  "description": "The Syr website",
+  "main": "index.js",
+  "scripts": {
+    "build": "sweeney build",
+    "dev": "sweeney serve --watch --port 8080"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielcsapo/syr.github.io.git"
+  },
+  "keywords": [
+    "Syr"
+  ],
+  "author": "Gabriel J. Csapo <gabecsapo@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabrielcsapo/syr.github.io/issues"
+  },
+  "homepage": "https://github.com/gabrielcsapo/syr.github.io#readme",
+  "devDependencies": {
+    "sweeney": "0.0.5"
+  }
+}
